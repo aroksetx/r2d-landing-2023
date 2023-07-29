@@ -18,12 +18,34 @@ const ContactForm = () => {
       },
       validationSchema: contact_schema,
       onSubmit: (values, { resetForm }) => {
-        console.log(values);
-        resetForm();
+        const myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+
+        const raw = JSON.stringify({
+          name: values?.name,
+          phone: values?.phone,
+          email: values?.email,
+          message: values?.msg,
+        });
+
+        const requestOptions = {
+          method: "POST",
+          headers: myHeaders,
+          body: raw,
+          redirect: "follow",
+        };
+
+        fetch(
+          "https://us-central1-aroksetx-13cc6.cloudfunctions.net/app/ready2-air",
+          requestOptions
+        )
+          .then((response) => response.text())
+          .then((result) => resetForm())
+          .catch((error) => resetForm());
       },
     });
 
-  const selectHandler = e => { }
+  const selectHandler = (e) => {};
   return (
     <form id="contact-form" onSubmit={handleSubmit}>
       <div className="row">
@@ -72,21 +94,7 @@ const ContactForm = () => {
             {touched.phone && <ErrorMsg error={errors.phone} />}
           </div>
         </div>
-        <div className="col-xxl-6 col-xl-6 col-lg-6">
-          <div className="single-input-field select">
-            <NiceSelect
-              options={[
-                { value: "Select Subject", text: "Select Subject" },
-                { value: "Subject One", text: "Subject One" },
-                { value: "Subject Two", text: "Subject Two" },
-                { value: "Subject Three", text: "Subject Three" },
-              ]}
-              defaultCurrent={0}
-              onChange={selectHandler}
-              name="Select Subject"
-            />
-          </div>
-        </div>
+
         <div className="col-xxl-12 col-xl-12 col-lg-12">
           <div className="single-input-field textarea">
             <textarea
@@ -104,7 +112,9 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="col-xxl-12 col-xl-12">
-          <button type="submit" className="fill-btn clip-btn">Send a message</button>
+          <button type="submit" className="fill-btn clip-btn">
+            Send a message
+          </button>
         </div>
       </div>
     </form>
