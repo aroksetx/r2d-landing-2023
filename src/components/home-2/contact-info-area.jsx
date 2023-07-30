@@ -42,7 +42,7 @@ const ContactInfoArea = () => {
             id: 1,
             text: 'Call us now',
             contact: 'tel:32622266600',
-            option: '326 222 666 00',
+            option: '326 222 666 0023',
             icon: 'flaticon-telephone-call',
         },
         {

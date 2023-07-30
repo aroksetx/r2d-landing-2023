@@ -27,14 +27,14 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
                 <Image src={logo} style={{ width: "auto", height: "auto" }} alt="Logo" />
               </Link>
             </div>
-            <div className="sidebar__search mb-25">
+            {/* <div className="sidebar__search mb-25">
               <form onSubmit={handleSubmit}>
                 <div className="single-input-field">
                   <input name="name" type="text" placeholder="Search Here" />
                   <i className="fas fa-search"></i>
                 </div>
               </form>
-            </div>
+            </div> */}
 
             <div className="mobile-menu fix mb-10 mean-container">
               <div className="mean-bar">
@@ -51,7 +51,7 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
                   <div className="sidebar__info-text">
                     <span>Call us now</span>
                     <h5>
-                      <a href="tel:32622266600">326 222 666 00</a>
+                      <a href="tel:+12535698215">+1 253 569 8215</a>
                     </h5>
                   </div>
                 </div>
@@ -62,11 +62,11 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
                   <div className="sidebar__info-text">
                     <span>Email now</span>
                     <h5>
-                      <a href="mailto:info@webdow.com">info@webdow.com</a>
+                      <a href="mailto:info@webdow.com">info@ready2.top</a>
                     </h5>
                   </div>
                 </div>
-                <div className="sidebar__info-item">
+                {/* <div className="sidebar__info-item">
                   <div className="sidebar__info-icon">
                     <i className="flaticon-pin"></i>
                   </div>
@@ -74,33 +74,10 @@ const OffCanvasMain = ({ isOffCanvasOpen, setIsOffCanvasOpen }) => {
                     <span>12/A, New Boston Hall</span>
                     <h5>New york, united states</h5>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
-            <div className="sidebar__social">
-            <ul>
-                <li>
-                  <Link href="https://www.facebook.com/">
-                    <i className="fab fa-facebook-f"></i>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="https://twitter.com/">
-                    <i className="fab fa-twitter"></i>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="https://www.behance.net/">
-                    <i className="fab fa-behance"></i>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="https://www.youtube.com/">
-                    <i className="fab fa-youtube"></i>
-                  </Link>
-                </li>
-              </ul>
-            </div>
+            
           </div>
         </div>
       </div>

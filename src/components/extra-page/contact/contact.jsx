@@ -13,9 +13,9 @@ const Contact = () => {
         {
             id: 2,
             icon: 'flaticon-envelope',
-            contact: 'mailto:info@ready.top',
+            contact: 'mailto:info@ready2.top',
             infoText: 'send email',
-            other: 'info@ready.top'
+            other: 'info@ready2.top'
         },
         // {
         //     id: 3,

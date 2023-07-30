@@ -86,7 +86,7 @@ const HeaderTwo = () => {
                                  <i className="flaticon-telephone-call"></i>
                               </div>
                               <div className="header__bottom-3-text">
-                                 <h5><Link href="tel:32622266600">326 222 666 00</Link></h5>
+                                 <h5><Link href="tel:32622266600">326 222 666 0023</Link></h5>
                               </div>
                            </div>
                            <div className="header__bottom-3-item">

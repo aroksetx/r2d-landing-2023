@@ -77,7 +77,7 @@ const HeaderThere = () => {
                                                 </div>
                                                 <div className="header__info-text">
                                                     <span>Call us now</span>
-                                                    <h5><Link href="tel:32622266600">326 222 666 00</Link></h5>
+                                                    <h5><Link href="tel:32622266600">+1 253 569 8215</Link></h5>
                                                 </div>
                                             </div>
                                             <div className="header__info-item">
