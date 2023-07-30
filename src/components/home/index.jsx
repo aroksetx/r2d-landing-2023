@@ -19,7 +19,7 @@ const index = () => {
             <BrandAreaSection />
             <AboutUs />
             <GalleryAreaSection />
-            <FunfactArea />
+            {/* <FunfactArea /> */}
             <AccordionArea />
             {/* TODO: uncoment when needed */}
             {/* <BlogAreaSection /> */}
