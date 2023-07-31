@@ -5,7 +5,7 @@ import movingIcon from '@assets/img/services/moving.png';
 const servicesData = [
   {
     id: 'box-truck-delivery',
-    title: "Box Truck Delivey",
+    title: "Box Truck Delivery",
     icon: "flaticon-frontal-truck",
     image: boxTruck,
     description:"Efficient box truck delivery services for all your shipments. Multiple box truck options available (12-26FT).",
@@ -135,7 +135,7 @@ const servicesData = [
   },
   {
     id: 'van-sprinter-delivery',
-    title: "Van/Sprinter Delivey",
+    title: "Van/Sprinter Delivery",
     icon: "flaticon-van",
     image: cargoVan,
     description:"Fast & Reliable  Service. Small shipments, urgent packages, and time-critical deliveries!",
